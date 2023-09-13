@@ -5,7 +5,7 @@ const allStudents = ['Иванов', 'Петров', 'Сидоров', 'Кузн
 const failedStudents = ['Сидоров', 'Смирнов', 'Попов'];
 
 function filter (arrAll, arrFailed) {
-	let result = arrAll.filter(elem => !arrFailed.includes(elem))
+	let result = arrAll.filter(elem => !arrFailed.includes(elem));
 
 	return result;
 }

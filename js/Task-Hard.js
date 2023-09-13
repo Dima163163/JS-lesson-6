@@ -12,9 +12,7 @@ const allCashboxHard = [
 ];
 
 const getAveragePriceGoods = (arr) => {
-	const result = arr.map(elem => {
-		return Math.round(elem[1] / elem[0])
-	});
+	const result = arr.map(elem => Math.round(elem[1] / elem[0]));
 
 	return result;
 };
