@@ -19,4 +19,4 @@ const addPrefixFor = (arr, str) => {
 }
 
 console.log(addPrefix(names, 'Mr'))
-console.log(addPrefixFor(names, 'Mr'))
+console.log('addPrefixFor: ', addPrefixFor(names, 'Mr'))

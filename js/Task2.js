@@ -12,4 +12,15 @@ const getAverageValue = (arr) => {
 	return total;
 };
 
+const getAverageValueFor = (arr) => {
+	let total = 0;
+
+	for(let i = 0; i < arr.length; i++) {
+		total += arr[i];
+	}
+
+	return Math.floor(total / 2);;
+};
+
 console.log('Средний чек за день: ', getAverageValue(allCashbox));
+console.log('Средний чек за день(for): ', getAverageValueFor(allCashbox));

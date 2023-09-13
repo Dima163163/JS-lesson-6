@@ -19,4 +19,16 @@ const getAveragePriceGoods = (arr) => {
 	return result;
 };
 
+const getAveragePriceGoodsFor = (arr) => {
+	let newArr = [];
+
+	for (let i = 0; i < arr.length; i++) {
+		let averagePrice = Math.round(arr[i][1]/arr[i][0]);
+		newArr.push(averagePrice)
+	}
+
+	return newArr;
+};
+
 console.log(getAveragePriceGoods(allCashboxHard))
+console.log('getAveragePriceGoodsFor: ', getAveragePriceGoodsFor(allCashboxHard))
